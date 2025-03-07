@@ -84,7 +84,7 @@ const ProfileEdit = ({ data, cover }) => {
                 socialLinks: formattedSocialLinks,
                 customProfileUrl: data.user_profile_url || ""
             });
-            console.log("formattedSocialLinks platforms", data);
+            console.log("formattedSocialLinks platforms", data.social_links);
             setImage(data.profile_image || null);
             setFormData({
                 id: data.id || '',
