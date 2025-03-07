@@ -5,7 +5,8 @@ import { DummyProfile } from '../utils';
 const SaveCard = ({ profile, onDelete }) => {
 
     const handleViewProfile = () => {
-        const profileUrl = process.env.REACT_APP_Frontend_Url + `profile/${profile.user_profile_url}`;
+        const FRONTEND_BASE_URL = process.env.REACT_APP_Frontend_Url || "https://frontend-phi-green.vercel.app/";
+        const profileUrl = FRONTEND_BASE_URL + `profile/${profile.user_profile_url}`;
         window.location.href = profileUrl;
     };
 
