@@ -1,7 +1,7 @@
 import axios from "axios";
 // console.log('Testing ENV Getting or Not>>>>', process.env.REACT_APP_Frontend_Url);
 // const API_BASE_URL = process.env.REACT_APP_API_URL || "https://digime.novatore-solutions.com/api/";
-const API_BASE_URL = process.env.REACT_APP_API_URL || "https://backend-brown-xi.vercel.app/api/";
+const API_BASE_URL = process.env.REACT_APP_API_URL || "https://backend-two-woad-73.vercel.app/api/";
 
 const axiosInstance = axios.create({
     baseURL: API_BASE_URL,
