@@ -12,8 +12,8 @@ import toast from 'react-hot-toast';
 const PreviewSection = ({ data }) => {
     const qrRef = useRef(null);
     const navigate = useNavigate();
-
-    const profileUrl = process.env.REACT_APP_Frontend_Url + `profile/${data?.user_profile_url}`;
+    const FRONTEND_BASE_URL = process.env.REACT_APP_Frontend_Url || "https://frontend-phi-green.vercel.app/";
+    const profileUrl = FRONTEND_BASE_URL + `profile/${data?.user_profile_url}`;
 
     const handleEditProfile = () => {
         navigate("/edit-profile");
