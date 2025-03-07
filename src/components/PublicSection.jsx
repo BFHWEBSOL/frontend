@@ -175,7 +175,7 @@ const PublicSection = ({ data }) => {
                                     <QRCode
                                         size={256}
                                         style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                                        value={profile?.user_profile_url ?? 'N/A'}
+                                        value={'https://frontend-phi-green.vercel.app/profile/' + profile?.user_profile_url ?? 'N/A'}
                                         viewBox={`0 0 256 256`}
                                         fgColor="rgba(84, 84, 84, 0.74)"
                                         bgColor="rgba(255, 255, 255, 0.04)"
