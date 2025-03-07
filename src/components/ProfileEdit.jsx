@@ -173,7 +173,7 @@ const ProfileEdit = ({ data, cover }) => {
                     social_link: formData?.socialLinks[platform.social_name] || ""
                 }))
                 .filter(item => item.social_link.trim() !== "");
-
+                console.log("formattedSocialLinks platforms", formattedSocialLinks);
             const payload = {
                 id: formData.id,
                 first_name: formData.profileName,
